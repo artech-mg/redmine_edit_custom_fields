@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-class AddUserEditableToCustomField < ActiveRecord::Migration
+class AddUserEditableToCustomField < ActiveRecord::Migration[5.1]
 
   def self.up
     add_column :custom_fields, :user_editable, :boolean, :default => false, :null => false
