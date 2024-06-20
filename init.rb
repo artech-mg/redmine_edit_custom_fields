@@ -42,7 +42,7 @@ Rails.configuration.to_prepare do
   #require_dependency File.join( File.dirname(File.realpath(__FILE__)), 'lib', 'projects_helper_patch' )
 
   # Load application helper
-  ::EditCustomFieldsHelper.tap do |mod|
+  ::EditCustomFieldsSettingsHelper.tap do |mod|
     ActionView::Base.send :include, mod unless ActionView::Base.include?(mod)
   end
 end

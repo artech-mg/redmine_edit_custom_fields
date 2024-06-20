@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-module EditCustomFieldsHelper
+module EditCustomFieldsSettingsHelper
 
   # Return all fields that are user-editable
   def getFields()
