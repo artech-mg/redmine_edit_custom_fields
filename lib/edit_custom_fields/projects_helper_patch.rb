@@ -24,7 +24,7 @@ module EditCustomFields
   module ProjectsHelperPatch
     extend ActiveSupport::Concern
 
-    def project_settings_tabs
+    def edit_custom_fields_project_settings_tabs
       tabs = super
 
       if User.current.allowed_to?(:edit_custom_fields, @project) &&
